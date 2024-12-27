@@ -13,8 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('etapes', function (Blueprint $table) {
-            $table->id();
+        Schema::table('priorite', function (Blueprint $table) {
+            $table->id(); // Colonne 'id' auto-incrémentée
+            $table->string('nom'); // Colonne 'nom' de type string
+            $table->text('description')->nullable(); // Colonne 'description' de type text (nullable)
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('etapes');
+        Schema::dropIfExists('priorite');
     }
 };

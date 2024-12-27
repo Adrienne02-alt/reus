@@ -13,8 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('user_admins', function (Blueprint $table) {
+        Schema::table('note', function (Blueprint $table) {
             $table->id();
+            $table->string('ticket');
+            $table->decimal('note', 5, 2);
+            $table->timestamp('date_notation')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_admins');
+        Schema::dropIfExists('note');
     }
 };

@@ -13,8 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('type__travaux_controllers', function (Blueprint $table) {
-            $table->id();
+        Schema::table('rapport_ticket', function (Blueprint $table) {
+            $table->id(); // Colonne 'id' auto-incrémentée
+            $table->string('ticket'); // Colonne 'ticket' de type string
+            $table->text('rapport'); // Colonne 'rapport' de type text
+            $table->timestamp('date_rapport')->nullable(); // Colonne 'date_rapport' de type timestamp (nullable)
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('type__travaux_controllers');
+        Schema::dropIfExists('rapport_ticket');
     }
 };

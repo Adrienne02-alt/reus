@@ -13,9 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('finitions', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('historique', function (Blueprint $table) {
+            $table->id(); // Colonne 'id' auto-incrémentée
+            $table->string('ticket'); // Colonne 'ticket' de type string
+            $table->timestamp('date_ajout')->nullable(); // Colonne 'date_ajout' de type timestamp (nullable)
+            $table->timestamps(); 
         });
     }
 
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('finitions');
+        Schema::dropIfExists('historique');
     }
 };
