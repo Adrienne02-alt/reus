@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@yield('title',"Acceuil Adminstarteur")</title>
-  <link rel="shortcut icon" type="image/png" href="{{ asset('assets/images/logos/Image 1.png') }}" />
+  <link rel="shortcut icon" type="image/png" href="{{ asset('assets/images/logos/Image1.png') }}" />
   <link rel="stylesheet" href="{{ asset('assets/css/styles.min.css')  }}" />
   <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
