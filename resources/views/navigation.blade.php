@@ -6,8 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@yield('title',"Acceuil Adminstarteur")</title>
-  <link rel="shortcut icon" type="image/png" href="{{ asset('assets/images/logos/Image1.png') }}" />
-  <link rel="stylesheet" href="{{ asset('assets/css/styles.min.css')  }}" />
+  <link rel="shortcut icon" type="image/png" href="https://css-two-black.vercel.app/assets/images/logos/Image1.png" />
+  <link rel="stylesheet" href="https://css-two-black.vercel.app/assets/css/styles.min.css" />
+  <link rel="stylesheet" href="https://css-two-black.vercel.app/assets/css/styles.css" />
   <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
 </head>
@@ -22,7 +23,7 @@
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./index.html" class="text-nowrap logo-img">
-          <img src="{{ asset('assets/images/logos/Image1.png ') }}" width="180" alt="">
+          <img src="https://css-two-black.vercel.app/assets/images/logos/Image1.png" width="180" alt="">
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -225,12 +226,12 @@
     </div>
   </div>
   <script src="https://cdn.ckeditor.com/ckeditor5/38.0.1/classic/ckeditor.js"></script>
-  <script src="{{ asset('assets/libs/jquery/dist/jquery.min.js') }}"></script>
-  <script src="{{ asset('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('assets/libs/jquery/dist/jquery.min.js') }}"></script>
-  <script src="{{ asset('assets/js/sidebarmenu.js') }}"></script>
-  <script src="{{ asset('assets/js/app.min.js') }}"></script>
-  <script src="{{ asset('assets/libs/simplebar/dist/simplebar.js') }}"></script>
+  <script src="https://css-two-black.vercel.app/assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="https://css-two-black.vercel.app/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://css-two-black.vercel.app/assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="https://css-two-black.vercel.app/assets/js/sidebarmenu.js"></script>
+  <script src="https://css-two-black.vercel.app/assets/js/app.min.js"></script>
+  <script src="https://css-two-black.vercel.app/assets/libs/simplebar/dist/simplebar.js"></script>
 </body>
 
 </html>
